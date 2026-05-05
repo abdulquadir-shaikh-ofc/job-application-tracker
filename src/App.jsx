@@ -427,11 +427,12 @@ function App() {
                     />
                   </FormField>
 
-                  <FormField label="Contact Email" icon={<User size={18} />}>
+                  <FormField label="Contact Email/Link" icon={<User size={18} />}>
                     <input
-                      type="email"
+                      type="text"
                       value={formData.contactEmail}
                       onChange={(e) => setFormData({...formData, contactEmail: e.target.value})}
+                      placeholder="email@example.com or https://linkedin.com/..."
                       style={inputStyle}
                     />
                   </FormField>
